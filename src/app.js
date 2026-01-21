@@ -1,11 +1,33 @@
-import "bootstrap";
-import "./style.css";
 
+let pronnoun = ['the', 'our'];
+let adjective = ['great', 'big'];
+let noun = ['jogger', 'racoon', 'pasiones', 'comsocom'];
+let domain = ['es', 'com', 'org', 'net'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+console.log("JS ejecutandose");
+
+const listaDominios = document.getElementById("domain-list");
+
+for (let i = 0; i < pronnoun.length; i++) {
+for (let j = 0; j < adjective.length; j++) {
+for (let n = 0; n < noun.length; n++) {
+for (let d = 0; d < domain.length; d++) {
+
+let nombreCompleto = pronnoun[i] + adjective[j] + noun[n] + "." + domain[d];
+let option = document.createElement("option");
+option.value = nombreCompleto;
+option.textContent = nombreCompleto;
+
+listaDominios.appendChild(option);
+
+  
+
+
+  }
+  }
+  }
+  }
+  };
+  
